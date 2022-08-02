@@ -31,7 +31,7 @@ const CardStyled = styled.div`
   align-items: center;
   justify-content: center;
   margin: 1rem 0;
-  border: 4px solid white;
+  border: 1px solid white;
   border-radius: 0.5rem;
   background-color: #4158d0;
   background-image: linear-gradient(
