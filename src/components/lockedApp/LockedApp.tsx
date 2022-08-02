@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import logo from "../../assets/images/lockedlogo.png";
+import web3 from "../../assets/images/web3rick.png";
 import { motion } from "framer-motion";
 import { logoAnimation } from "../variants/variants";
 import { Web3Context } from "../contexts/contextWeb3";
 import { useContext } from "react";
-import ContainerLockedApp from "./ContainerLockedApp";
+import { ContainerLockedApp, Web3Title } from "./ContainerLockedApp";
 import { Button } from "../navbar/NavbarStyles";
 
 const Message = styled.p`
@@ -22,7 +23,17 @@ const LockedApp = () => {
         src={logo}
         alt="logoRick"
         id="logo"
-      ></motion.img>
+      />
+      <Web3Title>
+        <motion.img
+          variants={logoAnimation}
+          animate={logoAnimation.animate}
+          src={web3}
+          alt="logoRick"
+          id="logo"
+        />
+      </Web3Title>
+
       <Button isLocked onClick={connect}>
         Connect Wallet
       </Button>

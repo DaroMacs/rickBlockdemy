@@ -24,4 +24,22 @@ const ContainerLockedApp = styled.div`
   }
 `;
 
-export default ContainerLockedApp;
+const Web3Title = styled.div`
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1rem;
+
+  img {
+    max-height: 80px;
+  }
+
+  @media screen and (min-width: 425px) {
+    img {
+      max-height: 120px;
+    }
+  }
+`;
+
+export { ContainerLockedApp, Web3Title };
