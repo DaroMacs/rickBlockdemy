@@ -26,6 +26,7 @@ const ModalBackgroung = styled.div`
 
   img {
     border-radius: 0.5rem;
+    max-width: 90%;
   }
 `;
 
