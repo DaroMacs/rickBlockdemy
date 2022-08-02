@@ -7,6 +7,7 @@ import { Web3Context } from "../contexts/contextWeb3";
 import { useContext } from "react";
 import { ContainerLockedApp, Web3Title } from "./ContainerLockedApp";
 import { Button } from "../navbar/NavbarStyles";
+import DevDario from "../devDario/DevDario";
 
 const Message = styled.p`
   color: white;
@@ -40,6 +41,7 @@ const LockedApp = () => {
       {isUnsupportedChain && (
         <Message>Please select Mainnet network in Metamask</Message>
       )}
+      <DevDario />
     </ContainerLockedApp>
   );
 };
